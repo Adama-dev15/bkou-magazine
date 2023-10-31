@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand&display=swap');
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Khand', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+}
+/*Style utils*/
+.container{
+    width: 100%;
+    margin: 0 auto;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul,
+nav{
+    margin: 0;
+    padding: 0; 
+}
+li{
+    list-style: none;
+}
+/*Style utils*/

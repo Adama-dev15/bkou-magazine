@@ -1,0 +1,44 @@
+/* Media Query */
+
+@media (max-width: 380px){
+    .container{
+        max-width: 380px;
+    }
+}
+
+
+
+
+@media (max-width: 570px){
+    .container{
+        max-width: 570px;
+    }
+}
+
+
+@media (min-width: 640px){
+    .container{
+        max-width: 640px;
+    }
+}
+
+
+@media (min-width: 768px){
+    .container{
+        max-width: 768px;
+    }
+}
+
+
+@media (min-width: 1024px){
+    .container{
+        max-width: 1024pxpx;
+    }
+}
+
+
+@media (min-width: 1280px){
+    .container{
+        max-width: 1280px;
+    }
+}
