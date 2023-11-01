@@ -1,44 +1,456 @@
 /* Media Query */
 
-@media (max-width: 380px){
-    .container{
-        max-width: 380px;
+@media (max-width: 375px) {
+    .container {
+        max-width: 375px;
     }
 }
 
-
-
-
-@media (max-width: 570px){
-    .container{
+@media (max-width: 570px) {
+    .container {
         max-width: 570px;
     }
+    /*start service*/
+    .service .img_service {
+        height: 1900px;
+    }
+    .service .img_service .images {
+        width: 300px;
+        height: 300px;
+    }
+     /*start formulaire*/
+     form {
+        padding: 0 20px 20px 20px;
+    }
+    form button {
+        width: 100px;
+        height: 40px;
+        font-size: 1.1rem;
+        padding: 5px 8px;
+        margin-top: 10px;
+    }
+    /*start footer*/
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 20px 0 20px;
+        width: 100%;
+    }
+    .footer_contact_inner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer_contact_inner .social{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .footer_contact_inner .social .icon{
+        margin: 0 30px;
+    }
+    .footer_contact_inner .social .icon:hover{
+        color: #FFF;
+    }
 }
 
-
-@media (min-width: 640px){
-    .container{
+@media (min-width: 640px) {
+    .container {
         max-width: 640px;
     }
-}
-
-
-@media (min-width: 768px){
-    .container{
-        max-width: 768px;
+    .social-icons{
+        display: block;
+    }
+    .site_header {
+        padding: 20px 20px 0 20px;
+    }
+    .site_header_inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .site_header_inner .header_navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .site_header_inner .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .site_header_inner .social-icons .icon {
+        color: #fff;
+    }
+    .site_header_inner .social-icons .icon:hover {
+        color: rgb(255, 136, 0);
+    }
+    /*start service*/
+    .service .img_service {
+        height: 950px;
+    }
+    .service .img_service .images {
+        width: 300px;
+        height: 300px;
+    }
+     /*star team*/
+     .team_inner_image {
+        display: flex;
+        gap: 20px;
+    }
+    .team_inner_image {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .team {
+        padding: 50px;
+    }
+    .inner_image img {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+    }
+    /*start formulaire*/
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 20px;
+        padding: 0 20px;
+    }
+    form button {
+        width: 100px;
+        height: 40px;
+        font-size: 1.2rem;
+        padding: 5px 8px;
+        margin-top: 50px;
+    }
+    /*start footer*/
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 30px 0 30px;
+        width: 100%;
+    }
+    .footer_contact_inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer_contact_inner .footer_contact{
+        font-size: 1.2rem;
+    }
+    .footer_contact_inner .social{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .footer_contact_inner .social .icon{
+        margin: 0 10px;
+    }
+    .footer_contact_inner .social .icon:hover{
+        color: #FFF;
     }
 }
 
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    .social-icons{
+        display: block;
+    }
+    .site_header {
+        padding: 20px 20px 0 20px;
+    }
+    .site_header_inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .site_header_inner .header_navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .site_header_inner .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .site_header_inner .social-icons .icon {
+        color: #fff;
+    }
+    .site_header_inner .social-icons .icon:hover {
+        color: rgb(255, 136, 0);
+    }
+    /*start service*/
+    .service .img_service {
+        height: 950px;
+    }
+    .service .img_service .images {
+        width: 300px;
+        height: 300px;
+    }
+     /*star team*/
+     .team_inner_image {
+        display: flex;
+        gap: 20px;
+    }
+    .team_inner_image {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .team {
+        padding: 50px;
+    }
+    .inner_image img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    /*start formulaire*/
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 20px;
+        padding: 0 30px;
+    }
+    form button {
+        width: 100px;
+        height: 40px;
+        font-size: 1.2rem;
+        padding: 5px 8px;
+        margin-top: 50px;
+    }
+    /*start footer*/
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 30px 0 30px;
+        width: 100%;
+    }
+    .footer_contact_inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer_contact_inner .footer_contact{
+        font-size: 1.2rem;
+    }
+    .footer_contact_inner .social{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .footer_contact_inner .social .icon{
+        margin: 0 20px;
+    }
+    .footer_contact_inner .social .icon:hover{
+        color: #FFF;
+    }
+}
 
-@media (min-width: 1024px){
-    .container{
+@media (min-width: 1024px) {
+    .container {
         max-width: 1024pxpx;
     }
 }
 
-
-@media (min-width: 1280px){
-    .container{
+@media (min-width: 1280px) {
+    .container {
         max-width: 1280px;
+    }
+    .social-icons {
+        display: block;
+    }
+    
+    /*start block_header*/
+    .site_header {
+        padding: 20px 0 0 0;
+    }
+    .site_header_inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .site_header_inner .header_navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    .site_header_inner .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .site_header_inner .social-icons .icon {
+        color: #fff;
+    }
+    .site_header_inner .social-icons .icon:hover {
+        color: rgb(255, 136, 0);
+    }
+    /*star banner*/
+    .banner {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/pexels-rakesh-gohil-318651.jpg") center center no-repeat fixed;
+        background-size: cover;
+        height: 700px;
+    }
+    .banner .container .banner_mini_title {
+        color: #fff;
+        letter-spacing: 5px;
+        margin-bottom: -50px;
+        font-size: 1.5rem;
+    }
+    .banner .container .name_agence {
+        color: #fff;
+        letter-spacing: 5px;
+        font-size: 4rem;
+    }
+    .banner .container .banner_passion {
+        font-size: 1.5rem;
+        margin: 20px 0 10px 0;
+    }
+    .banner .container button {
+        padding: 10px 20px;
+        font-size: 1.5rem;
+    }
+    /*start service*/
+    .service {
+        background-color: rgb(255, 136, 0);
+        position: relative;
+        padding: 40px 0;
+    }
+    .service .img_service {
+        height: 600px;
+    }
+    .service .img_service .images {
+        width: 400px;
+        height: 300px;
+    }
+    .images .text_img p {
+        font-size: 1.5rem;
+    }
+    /*start about us*/
+    .about_us {
+        position: relative;
+        padding: 120px 0;
+        color: #FFF;
+        font-size: 1.3rem;
+    }
+    .about_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about_us_title {
+        font-size: 2rem;
+    }
+    .inner_about_us {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about_us .container .inner_about_us button {
+        padding: 10px 20px;
+        font-size: 1.5rem;
+    }
+    .about_us_text {
+        width: 50%;
+    }
+    /*start nos projet*/
+    .swiper {
+        width: 100%;
+        height: 250px;
+    }
+    /*star team*/
+    .team_inner_image {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    .team_inner_image {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .team {
+        padding: 50px;
+    }
+    .inner_image img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+    /*start formulaire*/
+    .fomulaire {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px 40px 0;
+        width: 100%;
+    }
+    .fomulaire .field_group form input {
+        padding: 5px 8px;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 50px;
+    }
+    form button {
+        width: 100px;
+        height: 40px;
+        font-size: 1.3rem;
+        padding: 5px 8px;
+        margin-top: 50px;
+    }
+    /*start footer*/
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 50px 0 50px;
+        width: 100%;
+    }
+    .footer_contact_inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer_contact_inner .footer_contact{
+        font-size: 1.2rem;
+    }
+    .footer_contact_inner .social{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .footer_contact_inner .social .icon{
+        margin: 0 20px;
+    }
+    .footer_contact_inner .social .icon:hover{
+        color: #FFF;
     }
 }

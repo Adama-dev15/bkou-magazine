@@ -1,33 +1,526 @@
 @import url('https://fonts.googleapis.com/css2?family=Khand&display=swap');
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Khand', sans-serif;
     margin: 0;
     padding: 0;
     color: black;
     font-size: 16px;
 }
+
+
 /*Style utils*/
-.container{
+
+.container {
     width: 100%;
     margin: 0 auto;
-    margin-right: 20px;
-    padding-left: 20px;
 }
-a{
+
+a {
     text-decoration: none;
     color: inherit;
 }
+
 ul,
-nav{
+nav {
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
-li{
+
+li {
     list-style: none;
 }
+
+
 /*Style utils*/
+
+
+/*toggle_navigation*/
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(255, 136, 0);
+    width: 150px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: rgb(161, 161, 0);
+    ;
+    color: white;
+}
+
+.topnav a:not(:first-child) {
+    display: none;
+}
+
+.topnav a.icon {
+    float: right;
+    display: block;
+}
+
+.topnav.responsive {
+    position: relative;
+}
+
+.topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+
+/*toggle_navigation*/
+
+
+/*start block_header*/
+
+.social-icons {
+    display: none;
+}
+
+.site_header {
+    position: relative;
+    position: fixed;
+    z-index: 90000;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.site_header_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site_header_inner .logo a img {
+    height: 60px;
+    width: 60px;
+}
+
+
+/*end block_header*/
+
+
+/*star banner*/
+
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/sharegrid-RDxr5k3TUds-unsplash.jpg") center center no-repeat fixed;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner .container .banner_mini_title {
+    color: #fff;
+    letter-spacing: 5px;
+    margin-bottom: -20px;
+}
+
+.banner .container .name_agence {
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 2rem;
+}
+
+.banner .container .name_agence h2 {
+    border-bottom: 1px solid #9c9b9b;
+    margin: 0px;
+}
+
+.banner .container .banner_passion {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 10px 0 10px 0;
+}
+
+.banner .container .btn_contact {
+    text-align: center;
+}
+
+.banner .container button {
+    padding: 6px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(255, 136, 0);
+    color: #fff;
+}
+
+.banner .container button:hover {
+    background-color: #fff;
+    color: rgb(255, 136, 0);
+}
+
+
+/*end banner*/
+
+
+/*start service*/
+
+.service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(255, 136, 0);
+    padding: 0 10px 0 0;
+}
+
+.service .service_title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.service .img_service {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 5px 5px;
+    height: 480px;
+    margin-bottom: 20px;
+}
+
+.service .img_service .images {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 135px;
+    position: relative;
+    overflow: hidden;
+}
+
+.service .img_service .images img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.images .text_img {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transform: translateY(100%);
+    transition: 0.5s;
+}
+
+.images .text_img p {
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.images .text_img p span {
+    font-weight: bolder;
+    color: rgb(255, 136, 0);
+}
+
+.images:hover .text_img {
+    transform: translateY(0);
+}
+
+
+/*end service*/
+
+
+/*start about us*/
+
+.about_us {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/sharegrid-RDxr5k3TUds-unsplash.jpg") center center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    padding: 120px 20px;
+    color: #FFF;
+    font-size: 1.1rem;
+}
+
+.about_us .container .inner_about_us {
+    padding: 0 20px 0 0;
+}
+
+.about_us_title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: rgb(255, 136, 0);
+}
+
+.about_us .container .inner_about_us .about_us_text p {
+    text-align: justify;
+}
+
+.about_us .container .inner_about_us button {
+    padding: 6px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(255, 136, 0);
+    color: #fff;
+}
+
+.about_us .container .inner_about_us button:hover {
+    background-color: #fff;
+    color: rgb(255, 136, 0);
+}
+
+
+/*end about us*/
+
+
+/*start nos projet*/
+
+.nos_projets {
+    padding: 50px 20px;
+}
+
+
+/*swipers picteurs*/
+
+.swiper {
+    width: 100%;
+    height: 200px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*swipers picteurs*/
+
+
+/*end nos projet*/
+
+
+/*star team*/
+
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.678), rgba(255, 255, 255, 0.822)), url("./images/pexels-rakesh-gohil-318651.jpg") center center no-repeat fixed;
+    background-size: cover;
+}
+
+.team_inner_image {
+    display: flex;
+    flex-direction: column;
+}
+
+.inner_image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.trait {
+    display: none;
+}
+
+
+/*
+.trait .part_cercle {
+    position: relative;
+}
+
+.trait .part_cercle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.trait .cercle {
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.trait .orange {
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(255, 136, 0);
+    border-radius: 50%;
+    background-color: rgb(255, 136, 0);
+}
+
+.trait_verticale {
+    position: relative;
+}
+
+.trait_right {
+    border-bottom: 1px dashed black;
+    width: 30%;
+    position: absolute;
+    margin-top: -8px;
+    margin-left: 56px;
+}
+
+.trait_left {
+    border-bottom: 1px dashed black;
+    width: 30%;
+    position: absolute;
+    margin-top: -8px;
+    margin-left: 168px;
+}*/
+
+
+/*end team*/
+
+
+/*start formulaire*/
+
+.fomulaire {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px 40px 0;
+    width: 100%;
+}
+form{
+  padding: 0 20px;
+}
+.fomulaire .field_group {
+    margin: 10px 0;
+}
+
+.fomulaire .field_group input,
+textarea {
+    width: 100%;
+    padding: 5px 8px;
+}
+
+.fomulaire button {
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(255, 136, 0);
+    color: #fff;
+    transition: 0.5s;
+}
+
+.fomulaire button:hover {
+    background-color: #fff;
+    color: rgb(255, 136, 0);
+    border: 1px solid rgb(255, 136, 0);
+}
+
+
+/*end formulaire*/
+
+
+/*start footer*/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 136, 0);
+    background-color: black;
+}
+
+.map {
+    height: 200px;
+    width: 100%;
+    background-color: thistle;
+}
+
+.footer_icons {
+    height: 30px;
+    width: 100%;
+}
+
+.footer_icons .social {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-color: rgb(255, 136, 0);
+}
+
+.bkouMag {
+    width: 100%;
+    text-align: end;
+    margin-right: 30px;
+    letter-spacing: 4px;
+    font-weight: bolder;
+    color: rgb(255, 136, 0);
+}
+
+.footer_contact {
+    display: flex;
+    margin: 10px 0;
+}
+
+.footer_contact p {
+    margin: 0 20px;
+}
+
+
+/*end footer*/

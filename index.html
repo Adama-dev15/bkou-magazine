@@ -1,16 +1,348 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BKOU_MAG</title>
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/style.query.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
+
 <body>
-    
+    <!--header-->
+    <header class="site_header">
+        <div class="container">
+            <div class="site_header_inner">
+                <div class="logo">
+                    <a href="#"><img src="./images/Sans_titre-removebg-preview.png" alt=""></a>
+                </div>
+                <div class="header_navigation">
+                    <div class="header_navigation_icons">
+                        <div class="social-icons">
+                            <div class="icon">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                            <div class="icon">
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                            <div class="icon">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <div class="icon">
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                            <div class="icon">
+                                <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topnav" id="myTopnav">
+                        <a href="#home" class="active">Acceuil</a>
+                        <a href="#Notre_équipe">Notre équipe</a>
+                        <a href="#Notre_galeriee">Notre galeries</a>
+                        <a href="#contact">Contact</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!--banner-->
+    <section class="banner">
+        <div class="container">
+            <div class="banner_mini_title">
+                <h6>STUDIO PHOTO</h6>
+            </div>
+            <div class="name_agence">
+                <h2>BKOU MAG</h2>
+            </div>
+            <div class="banner_passion">
+                <span>La passion de l'image</span>
+            </div>
+            <div class="btn_contact">
+                <button type="submit"><a href="#">CONTACT</a></button>
+            </div>
+        </div>
+    </section>
+
+
+    <!--service-->
+    <section class="service">
+        <div class="container">
+            <div class="service_title">
+                <h2>Nos Services</h2>
+            </div>
+            <div class="img_service">
+                <div class="images">
+                    <img src="./images/384267555_834081492057222_6827088888149014772_nenev.jpg" alt="">
+                    <div class="text_img">
+                        <p>couverture <span>enenementielle</span></p>
+                    </div>
+                </div>
+                <div class="images">
+                    <img src="./images/shooting.jpg" alt="">
+                    <div class="text_img">
+                        <p>shooting <span>pro / privé</span></p>
+                    </div>
+                </div>
+                <div class="images">
+                    <img src="./images/annvv.jpg" alt="">
+                    <div class="text_img">
+                        <p>anniversaire <span>photo / video</span></p>
+                    </div>
+                </div>
+                <div class="images">
+                    <img src="./images/etic.jpg" alt="">
+                    <div class="text_img">
+                        <p>conception <span>affiche / logo</span></p>
+                    </div>
+                </div>
+                <div class="images">
+                    <img src="./images/mariage.jpg" alt="">
+                    <div class="text_img">
+                        <p>mariage <span>photo / video</span></p>
+                    </div>
+                </div>
+                <div class="images">
+                    <img src="./images/meilleur-photocopieur.jpg" alt="">
+                    <div class="text_img">
+                        <p>impression <span>sur tout support</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--about us-->
+    <section class="about_us">
+        <div class="container">
+            <div class="about_content">
+                <div class="inner_about_us">
+                    <div class="about_us_title">
+                        <h2>about us</h2>
+                    </div>
+                    <div class="about_us_text">
+                        <p class="about_us_text_1">
+                            Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae modi iste, quam quod ipsam voluptate! Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class="about_us_text_2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. doloremque? Vel impedit animi sed, pariatur mollitia perferendis ipsam, ratione in expedita voluptas tenetur et accusantium enim nisi, voluptatum magnam!
+                        </p>
+                        <p class="about_us_text_2">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis, tenetur dicta suscipit aperiam iure!
+                        </p>
+                    </div>
+                    <button type="submit">LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--nos projet-->
+    <section class="nos_projets">
+        <div class="container">
+            <div class="about_us_title">
+                <h2>NOS PROJECTS</h2>
+            </div>
+            <div class="pro_img">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/sharegrid-RDxr5k3TUds-unsplash.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/sharegrid-RDxr5k3TUds-unsplash.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/sharegrid-RDxr5k3TUds-unsplash.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/sharegrid-RDxr5k3TUds-unsplash.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/sharegrid-RDxr5k3TUds-unsplash.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/sharegrid-RDxr5k3TUds-unsplash.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/sharegrid-RDxr5k3TUds-unsplash.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/sharegrid-RDxr5k3TUds-unsplash.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/sharegrid-RDxr5k3TUds-unsplash.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--team-->
+
+    <section class="team">
+        <div class="container">
+            <div class="team_inner">
+                <div class="team_inner_header">
+                    <div class="about_us_title">
+                        <h2>NOTRE EQUIPE</h2>
+                    </div>
+                    <div class="icon">
+
+                    </div>
+                </div>
+                <div class="team_inner_image">
+                    <div class="inner_image">
+                        <img src="./images/bg.jpg" alt="">
+                    </div>
+                    <div class="inner_image">
+                        <img src="./images/bg.jpg" alt="">
+                    </div>
+                    <div class="inner_image">
+                        <img src="./images/bg.jpg" alt="">
+                    </div>
+                </div>
+                <div class="trait">
+                    <div class="part_cercle">
+                        <div class="cercle"></div>
+                        <div class="orange"></div>
+                        <div class="cercle"></div>
+                    </div>
+                    <div class="trait_verticale">
+                        <div class="trait_left"></div>
+                        <div class="trait_right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--formulaire-->
+    <section class="fomulaire">
+        <div class="container">
+            <div class="about_us_title">
+                <h2>CONTACT</h2>
+            </div>
+            <form action="#">
+                <div class="field_group">
+                    <input type="text" placeholder="Nom*" required>
+                </div>
+                <div class="field_group">
+                    <input type="text" placeholder="Prénom(s)*" required>
+                </div>
+                <div class="field_group">
+                    <input type="email" placeholder="E-Mail*" required>
+                </div>
+                <div class="field_group">
+                    <input type="text" placeholder="Numéro téléphone*" required>
+                </div>
+                <div class="field_group">
+                    <textarea name="#" id="" cols="30" rows="10" placeholder="Message*" required></textarea>
+                </div>
+                <button class="envoie" type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!--footer-->
+
+    <footer>
+        <div class="container">
+            <div class="footer_inner">
+                <div class="map">
+
+                </div>
+                <div class="footer_contact_inner">
+                    <div class="footer_contact">
+                        <div>
+                            <p>Contact <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></p>
+                        </div>
+                       <div>
+                            <p>07 57 62 85 22</p>
+                       </div>
+                        <div>
+                            <p>01 52 25 11 50</p>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <div class="icon">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="bkouMag">BKOU MAG</div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            breakpoints: {
+                520: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                640: {
+                    slidesPerView: 2,
+                },
+                1280: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
+
 </html>
